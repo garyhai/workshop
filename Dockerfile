@@ -15,4 +15,4 @@ RUN echo "root:root" | chpasswd
 #export ssh server port
 EXPORT 22
 
-CMD ["/usr/sbin/sshd -D"]
+CMD /usr/sbin/sshd -D
