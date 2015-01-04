@@ -7,7 +7,7 @@ RUN yum -y update
 RUN yum -y install openssh-server
 
 # set default locale
-RUN echo 'LANG="en_US.UTF-8"' > /etc/default/locale
+RUN echo 'LANG="en_US.UTF-8"' >> /etc/default/locale
 
 # generate default configuration.
 RUN service sshd start
