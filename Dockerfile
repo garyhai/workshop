@@ -28,6 +28,6 @@ RUN mkdir -p /usr/local/src;\
     make install
 
 #export ssh server port
-EXPORT 22
+EXPOSE 22
 
 CMD /usr/sbin/sshd -D
