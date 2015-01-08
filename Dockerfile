@@ -15,7 +15,7 @@ RUN service sshd stop
 RUN echo "root:root" | chpasswd
 
 # install deps
-RUN yum -y install git gcc tar autoconf automake
+RUN yum -y install git gcc tar autoconf automake ncurses-devel
 
 # clone erlang with HEAD checkout and build it
 RUN mkdir -p /usr/local/src;\
