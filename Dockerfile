@@ -31,6 +31,8 @@ RUN mkdir -p /usr/local/src;\
 
 # checkout trunk of asterisk and build it.
 RUN cd /usr/local/src;\
+    svn checkout http://svn.asterisk.org/svn/asterisk/trunk asterisk;\
+    cd asterisk;\
     ./configure;\
     make && make install
 
